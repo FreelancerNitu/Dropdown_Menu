@@ -1,0 +1,122 @@
+/* .col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.46%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;} */
+
+/* Commom css start */
+body{
+    color: #333333;
+    font-size: 15px;
+    margin: 0;
+    line-height: 1.5rem;
+    font-family: 'Courier New', Courier, monospace;
+    background: url(../img/laptop2.jfif) no-repeat center center/cover;
+}
+.container{
+    max-width: 960px;
+    width: 96%;
+    margin: 0 auto;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.alignleft{
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+.alignright{
+    float: right;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+.aligncenter{
+    display: block;
+    margin: 0 auto 15px;
+}
+/* Common css end */
+/* Header area start */
+nav#MainMenu {
+    width: 100%;
+    clear: both;
+    
+}
+
+.innerMenu {
+    min-height: 33px;
+    background: #333333;
+    padding: 15px 0;
+    border-radius: 5px;
+    
+}
+
+nav#MainMenu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+   
+}
+
+nav#MainMenu ul li {
+    display: inline-block;
+    margin: 0 5px;
+    position: relative;
+}
+
+nav#MainMenu ul li a {
+    display: block;
+    text-decoration: none;
+    color: #ffff;
+    font-size: 20px;
+    padding: 5px;
+}
+nav#MainMenu ul li:hover a{
+    color: red;
+}
+nav#MainMenu ul ul{
+    position: absolute;
+    background: green;
+    width: 180px;
+    left: -999999px;
+    top: 33px;
+    
+}
+nav#MainMenu ul li:hover ul{
+    left: 0;
+}
+nav#MainMenu ul li:hover ul ul{
+    left: -999999px;
+}
+nav#MainMenu ul li ul li:hover ul{
+    left: 180px;
+} 
+nav#MainMenu ul ul ul{
+    left: -999999px;
+    top: 0;
+}
+nav#MainMenu ul ul li{
+    display: block;
+    margin: 0;
+}
+nav#MainMenu ul ul li:hover ul li a{
+    background: none;
+    color: red;
+}
+nav#MainMenu ul ul li ul li a:hover {
+    background: #333333;
+    color: #fff;
+}
+nav#MainMenu ul li ul li:hover a{
+    background: #333;
+    color: #fff;
+}
